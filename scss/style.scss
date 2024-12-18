@@ -162,7 +162,11 @@ a {
   
     &__link{
         padding: 20px;
-        background-color: #4392F1;
+        background-image: url(/images/pexeso_prezentace.jpg);
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 7em;
     }
 
     &__logo {
