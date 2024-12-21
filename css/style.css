@@ -188,7 +188,7 @@ a {
   margin: 0;
   padding: 0.5em;
   color: white;
-  font-weight: 800;
+  font-weight: 200;
   font-optical-sizing: auto;
   font-style: normal;
   font-size: 2em;
@@ -257,7 +257,7 @@ a {
   font-size: 1.5em;
   font-weight: bold;
   text-align: center;
-  color: #DC493A;
+  color: black;
   grid-column: 2/3;
   grid-row: 1/-1;
 }
