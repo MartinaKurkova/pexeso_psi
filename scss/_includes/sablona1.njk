@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <title>Pekseso</title>
+</head>
+
+
+<body>
+<!--header, menu-->
+<header class="header">
+    <div class="header__container">
+        <h1 class="header__logo">
+            <a href="/" class="header__link">
+                <span class="header__link--indigo">PEK</span><span class="header__link--green">SE</span><span class="header__link--red">SO</span>
+            </a>
+        </h1>
+        <nav class="header__nav">
+            <ul class="menu menu--hidden">
+                <li class="menu__item {{ 'menu__item--active' if page.fileSlug == '' }}"><a href="/" class="menu__link">Psi</a></li>
+                <li class="menu__item {{ 'menu__item--active' if page.fileSlug == '' }}"><a href="/o_mne/" class="menu__link">Vánoce</a></li>
+                <li class="menu__item {{ 'menu__item--active' if page.fileSlug == '' }}"><a href="/obchod/" class="menu__link">Ptáci</a></li>
+                <li class="menu__item {{ 'menu__item--active' if page.fileSlug == ''}}"><a href="/kontakt/" class="menu__link">Les</a></li>
+                <li class="menu__item {{ 'menu__item--active' if page.fileSlug == ''}}"><a href="/kontakt/" class="menu__link">Zelenina</a></li>
+            </ul>
+            <div class="menu__hamburger">
+                <span class="menu__line"></span>
+                <span class="menu__line"></span>
+                <span class="menu__line"></span>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+{{ content | safe }}
+
+</main>
+
+<footer class="footer">
+    <p class="footer__text">© 2025, Martina Kurková Nožičková</p>
+</footer>
+<script src="/js/hamburger.js"></script>
+</body>
+</html>

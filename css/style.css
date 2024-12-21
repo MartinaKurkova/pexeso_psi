@@ -304,12 +304,12 @@ a {
   font-weight: 600;
 }
 
-footer {
+.footer {
   background-color: indigo;
   margin: 0;
   height: 6em;
 }
-footer__text {
+.footer__text {
   color: white;
   text-align: center;
   padding: 1em;
