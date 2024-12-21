@@ -1,15 +1,19 @@
 module.exports = function(eleventyConfig) {
-    return {
-        // možné formáty šablon
-        templateFormats: ["njk", "html", "md"],
-        // jako šablonovací jazyk zvolíme Nunjucks`
-        markdownTemplateEngine: "njk",
-        htmlTemplateEngine: "njk",
-        dataTemplateEngine: "njk",
-        }
-    // Výchozí výstupní složka je: _site
-    // Zkopírovat images/ do _site/images
+
     eleventyConfig.addPassthroughCopy("images");
-    // Zkopírovat css/ to _site/css/
+    eleventyConfig.addPassthroughCopy("Thumbnails");
     eleventyConfig.addPassthroughCopy("css");
+    eleventyConfig.addPassthroughCopy("js");
+  
+    return {
+      dir: {
+        input: ".",         // Kořenová složka jako vstup
+        output: "_site",    // Výstupní složka
+      },
+      templateFormats: ["njk", "html", "md", "liquid"],
+  
+      markdownTemplateEngine: "njk",
+      htmlTemplateEngine: "njk",
+      dataTemplateEngine: "njk",
     };
+  };
