@@ -1,13 +1,13 @@
 .footer {
     background-color: indigo;
+    color: white;
+    text-align: center;
     margin: 0;
-    height: 6em;
-
+    padding: 1.5em;
+    width: 100%; 
+  
     &__text {
-        color: white;
-        text-align: center;
-        padding: 1em;
         margin: 0;
-        padding: 0;
+        font-size: 0.8em;
     }
 }
