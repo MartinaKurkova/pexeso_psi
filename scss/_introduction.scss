@@ -1,0 +1,44 @@
+.introduction {
+    background-color: #FFD23F;
+    margin: 0;
+    padding: 20px;
+    &__title {
+        font-size: 2rem;
+        font-weight: 900;
+    }
+}
+
+.choose{
+    background-color: #3BCEAC;
+    margin: 0;
+    padding: 20px;
+
+    &__title {
+        font-size: 1.2em;
+        text-align: center;
+    }
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    grid-template-rows: repeat(2, auto);
+    gap: 1em;
+
+    &__item {
+        background-color: white;
+        border-radius: 0.5em;
+        width: 100%;
+        padding: 0.5em;
+    }
+
+    &__image {
+        width: 100%;
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    &__text {
+        text-align: center;
+        font-weight: 600;
+    }
+}

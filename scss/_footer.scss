@@ -1,0 +1,13 @@
+footer {
+    background-color: indigo;
+    margin: 0;
+    height: 6em;
+
+    &__text {
+        color: white;
+        text-align: center;
+        padding: 1em;
+        margin: 0;
+        padding: 0;
+    }
+}

@@ -1,0 +1,21 @@
+html {
+    box-sizing: border-box;
+    background-color: white;
+  }
+  
+  *, ::after, ::before {
+    box-sizing: inherit;
+  }
+  
+  body {
+    max-width: 68.75rem;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 1.5em;
+    margin: 20px auto;
+	  padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
